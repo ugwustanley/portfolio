@@ -104,7 +104,11 @@
       @media(max-width:450px){
         font-size:60px;
         line-height:65px;
-        color:teal;
+        
+        background:linear-gradient(rgb(248, 142, 4) , rgb(6, 28, 156));
+        background-clip:text;
+        -webkit-text-fill-color:transparent;
+       // color:rgb(247, 114, 6);
       }
       
       // @media(max-width:330px){
@@ -218,7 +222,11 @@
     margin-left:auto;
     margin-top:20px;
     margin-bottom:70px;
-    
+    @media(max-width:450px)
+    {
+      margin-bottom:20px;
+      margin-top:70px;
+    }
    
     &_p{
       font-size:20px;
