@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="../images/[removal 1.png" />
          {/* google fonts */}
          <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com"  />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Secular+One&display=swap" rel="stylesheet"></link>
       </Head>
        
@@ -38,7 +38,7 @@ export default function Home() {
         <main className={styles.main}>
 
            <section className={styles.intro}>
-                  <p className={styles.intro_p}>Hi, i'm</p>
+                  <p className={styles.intro_p}>Hi, i&apos;m</p>
                   <h1 className={styles.intro_h1}>Ugwu Chiagozie Stanley</h1>
                   <h4 className={styles.intro_h4}>a software developer who build innovative products</h4>
                   
