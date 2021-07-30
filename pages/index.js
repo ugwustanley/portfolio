@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import {Main} from 'next/document'
 import { InstagramLogo , LinkedinLogo , GithubLogo , TwitterLogo , GlobeHemisphereWest} from 'phosphor-react'
 import Memoji from '../images/[removal 1.png'
 import WavyHand from '../images/wavy 1.png'
