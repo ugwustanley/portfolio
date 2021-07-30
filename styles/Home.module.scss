@@ -62,9 +62,8 @@
 
 .intro{
   @media(max-width:450px){
-    min-height:calc(100vh - 10px);
+    min-height:calc(100vh - 100px);
     position:relative;
-    background:red;
     display:flex;
     flex-direction:column;
   }
@@ -105,7 +104,7 @@
       @media(max-width:450px){
         font-size:60px;
         line-height:65px;
-        color:rgb(226, 154, 126);
+        color:teal;
       }
       
       // @media(max-width:330px){
@@ -131,7 +130,7 @@
       font-size:20px;
     }
     @media(max-width:400px){
-     font-size:20px;
+     font-size:17px;
      margin-top:10px;
      line-height:25px;
      font-weight:500;
