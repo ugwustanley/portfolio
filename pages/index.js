@@ -38,6 +38,7 @@ export default function Home() {
         <main className={styles.main}>
 
            <section className={styles.intro}>
+             <span>
                   <p className={styles.intro_p}>Hi, i&apos;m</p>
                   <h1 className={styles.intro_h1}>Ugwu Chiagozie Stanley</h1>
                   <h4 className={styles.intro_h4}>a software developer who build innovative products</h4>
@@ -46,7 +47,7 @@ export default function Home() {
                         <p className={styles.hire_me_btn_p}>Hire me</p>
                         <div className={styles.hire_me_btn_arrow}></div>
                     </button>
-
+             </span>
 
                     <div className={styles.intro_socials}>
                           <LinkedinLogo size={25} color="#D6D8D8" weight="fill" />
@@ -115,7 +116,7 @@ export default function Home() {
                                <h1 className={styles.projects_main_1_card_1_h1}>02</h1>
                                <p className={styles.projects_main_1_card_1_tools}>HTMl/css Javascript AOS</p>
 
-                               <h2 className={styles.projects_main_1_card_1_h2}>BookMarks</h2>
+                               <h2 className={styles.projects_main_1_card_1_h2}>Bookmarks</h2>
                                <p className={styles.projects_main_1_card_1_desc}>A landing page for bookmarks chrome extension</p>
 
                                <div className={styles.projects_main_1_card_1_links}>
@@ -133,7 +134,7 @@ export default function Home() {
                                <h1 className={styles.projects_main_1_card_2_h1}>01</h1>
                                <p className={styles.projects_main_1_card_2_tools}>HTMl/css Javascript AOS</p>
 
-                               <h2 className={styles.projects_main_1_card_2_h2}>BookMarks</h2>
+                               <h2 className={styles.projects_main_1_card_2_h2}>Bookmarks</h2>
                                <p className={styles.projects_main_1_card_2_desc}>A landing page for bookmarks chrome extension</p>
 
                                <div className={styles.projects_main_1_card_2_links}>
@@ -155,7 +156,7 @@ export default function Home() {
                                <h1 className={styles.projects_main_2_card_3_h1}>03</h1>
                                <p className={styles.projects_main_2_card_3_tools}>HTMl/css Javascript AOS</p>
 
-                               <h2 className={styles.projects_main_2_card_3_h2}>BookMarks</h2>
+                               <h2 className={styles.projects_main_2_card_3_h2}>Bookmarks</h2>
                                <p className={styles.projects_main_2_card_3_desc}>A landing page for bookmarks chrome extension</p>
 
                                <div className={styles.projects_main_2_card_3_links}>
@@ -173,7 +174,7 @@ export default function Home() {
                                <h1 className={styles.projects_main_2_card_4_h1}>04</h1>
                                <p className={styles.projects_main_2_card_4_tools}>HTMl/css Javascript AOS</p>
 
-                               <h2 className={styles.projects_main_2_card_4_h2}>BookMarks</h2>
+                               <h2 className={styles.projects_main_2_card_4_h2}>Bookmarks</h2>
                                <p className={styles.projects_main_2_card_4_desc}>A landing page for bookmarks chrome extension</p>
 
                                <div className={styles.projects_main_2_card_4_links}>

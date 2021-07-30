@@ -61,7 +61,11 @@
 }
 
 .intro{
-
+  @media(max-width:450px){
+    min-height:calc(100vh - 150px);
+    display:flex;
+    flex-direction:column;
+  }
   &_p{
     font-family:Secular One;
     color:#fff;
@@ -73,6 +77,7 @@
      }
     @media(max-width:400px){
       font-size:16px;
+      margin-top:100px;
      }
   }
   &_h1{
@@ -95,14 +100,13 @@
         font-size:37px;
       }
       @media(max-width:450px){
-        font-size:30px;
+        font-size:35px;
+        line-height:40px;
       }
-      @media(max-width:400px){
-        font-size: 25px;
-      }
-      @media(max-width:330px){
-        font-size: 24px;
-       }
+      
+      // @media(max-width:330px){
+      //   font-size: 24px;
+      //  }
   }
   &_h4{
     font-size:35px;
@@ -120,12 +124,13 @@
       font-size:18px;
     }
     @media(max-width:450px){
-      font-size:16px;
+      font-size:20px;
     }
     @media(max-width:400px){
-     font-size:16px;
-     margin-top:0;
-     line-height:17px;
+     font-size:19px;
+     margin-top:10px;
+     line-height:20px;
+     font-weight:600;
      
      }
   }
@@ -137,12 +142,17 @@
        border:none;
        background-color:transparent;
        margin-top:20px;
+       @media(max-width:450px){
+         margin-top:0px;
+         margin-left:-5px;
+       }
        &_p{
          font-size:20px;
          color:$textPrimary;
          font-family:Secular One;
          @media(max-width:600px){
           font-size:16px;
+          
         }
        }
        &_arrow{
@@ -162,13 +172,18 @@
    align-items:baseline;
    font-family: Secular One;
    color:$textPrimary;
-   left:55px;
-   top:calc(100vh - 100px);
+  //  left:55px;
+  //  top:calc(100vh - 100px);
    &_1 , &_2, &_3 , &_4{
     margin-right:10px;
   }
   &_1{
     font-size:30px;
+  }
+  @media(max-width:450px){
+    position:absolute;
+    bottom:20px;
+   
   }
 }
 
@@ -179,6 +194,11 @@
   justify-content:space-between;
   justify-self: flex-right;
   margin-top:40px;
+  @media(max-width:450px){
+    position:absolute;
+    bottom:120px;
+    right:15px;
+  }
 }
 
 .about_me{
