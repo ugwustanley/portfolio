@@ -1,11 +1,18 @@
+import {useState} from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import { InstagramLogo , LinkedinLogo , GithubLogo , TwitterLogo , GlobeHemisphereWest} from 'phosphor-react'
 import Memoji from '../images/[removal 1.png'
 import WavyHand from '../images/wavy 1.png'
+import Navbar from '../component/navbar'
 import styles from '../styles/Home.module.scss'
 
 export default function Home() {
+  const [show_nav , setShow_nav] = useState(false)
+
+  const setNav = (value) =>{
+       setShow_nav(value)
+  }
   return (
     <div className={styles.container}>
       <Head>
@@ -18,26 +25,32 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Secular+One&display=swap" rel="stylesheet"></link>
       </Head>
        
-       {/* header */}
-       <header className={styles.main}>
-           
-            <nav className={styles.nav}>
-              <h1 className={styles.logo}>Stanlee</h1>
-
-              <div className={styles.menu_bar}>
-                <div className={styles.menu_bar_arrow}></div>
-                <div className={styles.menu_bar_arrow}></div>
-              </div>
-
-            </nav>
-
-      </header>
-
+     
+         <div className={show_nav ? styles.show_nav : styles.hide_nav}>
+           <Navbar setNav={setNav} /> 
+         </div>
        
      
         <main className={styles.main}>
+          
+          <div className={styles.home_screen}>
+               <header className={styles.main}>
+                      
+                      <nav className={styles.nav}>
+                        <h1 className={styles.logo}>Stanlee</h1>
 
-           <section className={styles.intro}>
+                        <div className={styles.menu_bar} onClick={() =>setNav(true)}>
+                          <div className={styles.menu_bar_arrow}></div>
+                          <div className={styles.menu_bar_arrow}></div>
+                        </div>
+
+                      </nav>
+
+                </header>
+
+                <section className={styles.intro}>
+               {/* header */}
+      
              <span>
                   <p className={styles.intro_p}>Hi, i&apos;m</p>
                   <h1 className={styles.intro_h1}>Ugwu Chiagozie Stanley</h1>
@@ -64,6 +77,10 @@ export default function Home() {
                   </div>
 
            </section>
+
+
+          </div>
+         
 
            
 
