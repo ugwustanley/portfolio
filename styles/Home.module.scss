@@ -62,7 +62,9 @@
 
 .intro{
   @media(max-width:450px){
-    min-height:calc(100vh - 150px);
+    min-height:calc(100vh - 10px);
+    position:relative;
+    background:red;
     display:flex;
     flex-direction:column;
   }
@@ -78,6 +80,7 @@
     @media(max-width:400px){
       font-size:16px;
       margin-top:50px;
+      
      }
   }
   &_h1{
@@ -102,6 +105,7 @@
       @media(max-width:450px){
         font-size:60px;
         line-height:65px;
+        color:rgb(226, 154, 126);
       }
       
       // @media(max-width:330px){
@@ -127,10 +131,10 @@
       font-size:20px;
     }
     @media(max-width:400px){
-     font-size:19px;
+     font-size:20px;
      margin-top:10px;
-     line-height:20px;
-     font-weight:600;
+     line-height:25px;
+     font-weight:500;
      
      }
   }
@@ -340,6 +344,10 @@
 .projects{
  
   margin-bottom:40px;
+  @media(max-width:450px){
+    margin-top:80px;
+   
+  }
   &_heading{
 
     display:flex;
@@ -353,6 +361,10 @@
     margin-bottom:120px;
     @media(max-width:600px){
       margin-bottom:50px;
+      margin-left:-5px;
+    }
+    @media(max-width:400px){
+     margin-bottom:-10px;
     }
    
     &_p{
@@ -403,9 +415,10 @@
           height:300px;
         }
         @media(max-width:400px){
-          max-width:300px;
+          max-width:350px;
           width:100%;
           height:300px;
+          margin-top:80px;
         }
         
 
@@ -480,7 +493,7 @@
           transform:translateX(-25px) translateY(-70px);
         }
         @media(max-width:400px){
-          transform:translateX(-25px) translateY(-70px);
+          transform:translateX(-20px) translateY(-70px);
         }
       }
       }
@@ -491,7 +504,7 @@
           transform:translateX(315px) translateY(-70px);
         }
         @media(max-width:400px){
-          transform:translateX(230px) translateY(-70px);
+          transform:translateX(-20px) translateY(-70px);
         }
       }
      }
@@ -501,6 +514,9 @@
         @media(max-width:600px){
           transform:translateX(-25px) translateY(215px);
         }
+        @media(max-width:400px){
+          transform:translateX(-20px) translateY(-70px);
+        }
       }
    }
    &_card_4{
@@ -509,8 +525,8 @@
       @media(max-width:600px){
         transform:translateX(315px) translateY(215px);
       }
-      @media(max-width:600px){
-        transform:translateX(230px) translateY(215px);
+      @media(max-width:400px){
+        transform:translateX(-20px) translateY(-70px);
       }
     }
  }
@@ -522,6 +538,9 @@
 
 .contact{
   margin-bottom:50px;
+  @media(max-width:450px){
+    margin-top:100px;
+  }
   &_heading{
 
     display:flex;
@@ -534,6 +553,9 @@
     margin-left:auto;
     margin-top:80px;
     margin-bottom:70px;
+    @media(max-width:450px){
+      margin-bottom:30px;
+    }
    
     &_p{
       font-size:20px;
@@ -600,6 +622,13 @@
     color:$textSecondary;
     text-align:right;
   }
+ @media(max-width:450px){
+  padding-bottom:10px;
+  margin-top:10px;
+  &_text{
+    text-align:center;
+  }
+ }
 }
 
 
