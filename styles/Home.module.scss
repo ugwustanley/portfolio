@@ -105,7 +105,7 @@
         font-size:60px;
         line-height:65px;
         
-        background:linear-gradient(rgb(248, 142, 4) , rgb(6, 28, 156));
+        background:linear-gradient( pink , blue, red);
         background-clip:text;
         -webkit-text-fill-color:transparent;
        // color:rgb(247, 114, 6);
@@ -188,8 +188,7 @@
     font-size:30px;
   }
   @media(max-width:450px){
-    position:absolute;
-    bottom:20px;
+   
    
   }
 }
@@ -202,9 +201,9 @@
   justify-self: flex-right;
   margin-top:40px;
   @media(max-width:450px){
-    position:absolute;
-    bottom:120px;
-    right:15px;
+    // position:absolute;
+    // bottom:120px;
+    // right:15px;
   }
 }
 
@@ -234,7 +233,7 @@
       font-family:Secular One;
       margin-left:8px;
       @media(max-width:600px){
-        font-size:16px;
+        font-size:20px;
       }
     }
     &_arrow{
@@ -242,7 +241,7 @@
       background:$textPrimary;
       height:2px;
       @media(max-width:600px){
-        width:100px;
+        width:150px;
       }
       
     }
@@ -352,7 +351,7 @@
  
   margin-bottom:40px;
   @media(max-width:450px){
-    margin-top:80px;
+    margin-top:120px;
    
   }
   &_heading{
@@ -380,7 +379,7 @@
       font-family:Secular One;
       margin-left:8px;
       @media(max-width:600px){
-        font-size:16px;
+        font-size:20px;
       }
     }
     &_arrow{
@@ -388,7 +387,7 @@
       background:$textPrimary;
       height:2px;
       @media(max-width:600px){
-        width:100px;
+        width:120px;
       }
       
     }
@@ -570,7 +569,7 @@
       font-family:Secular One;
       margin-left:8px;
       @media(max-width:600px){
-        font-size:16px;
+        font-size:20px;
       }
     }
     &_arrow{
@@ -578,7 +577,7 @@
       background:$textPrimary;
       height:2px;
         @media(max-width:600px){
-         width:100px;
+         width:120px;
         }
       
     }
