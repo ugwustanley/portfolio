@@ -47,6 +47,11 @@
    }
 }
 
+.container_cropped{
+  height:100vh;
+  overflow:hidden;
+}
+
 .show_nav{
   display:block;
   background:blue;
@@ -72,12 +77,8 @@
   align-items:center;
   z-index:99;
   .logo{
-    font-style:regular;
-    font-size:35px;
-    font-family: Secular One;
-    color:$textPrimary;
     @media(max-width:700px){
-      font-size:25px;
+      width:10px !important;
      }
     
   }
@@ -100,16 +101,10 @@
       height:2px;
       background:$textPrimary;
       border-radius:10px;
-      @media(max-width:700px){
-        width:50px;
+      @media(max-width:500px){
+        width:35px;
         height:2px;
       }
-    }
-    &_clicked{
-
-    }
-    &_unclicked{
-
     }
   }
  
@@ -155,10 +150,11 @@
       }
       @media(max-width:600px){
         font-size:37px;
+        line-height:40px;
       }
       @media(max-width:450px){
-        font-size:60px;
-        line-height:65px;
+        font-size:30px;
+        line-height:35px;
         
       //   background:linear-gradient( pink , blue, red);
       //   background-clip:text;
@@ -190,7 +186,7 @@
       font-size:20px;
     }
     @media(max-width:400px){
-     font-size:17px;
+     font-size:14px;
      margin-top:10px;
      line-height:25px;
      font-weight:500;
@@ -217,6 +213,9 @@
           font-size:20px;
           
         }
+        @media(max-width:400px){
+          font-size:15px;
+        }
        }
        &_arrow{
          width:150px;
@@ -225,6 +224,10 @@
          margin-left:8px;
          @media(max-width:600px){
           width:150px;
+        }
+        @media(max-width:400px){
+          width:120px;
+          
         }
        }
   }

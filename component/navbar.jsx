@@ -6,28 +6,27 @@ import Github from "../images/icons/github.svg";
 import Twitter from "../images/icons/twitter.svg";
 import { motion, AnimatePresence } from "framer-motion";
 
-function Navbar({ setNav }) {
+function Navbar({ setNav, show_nav }) {
   const partVariants = {
     hidden: {
-      opacity: 0.5,
       y: -100,
     },
     visible: {
-      opacity: 1,
-      y: 100,
+      y: 0,
       transition: {
-        duration: 30,
-        delay: 20,
-        ease: "easeOut",
+        duration: 10,
+        delay: 2,
+        ease: "easeIn",
       },
     },
   };
+  console.log(show_nav);
   return (
     <div className={styles.nav_bar}>
       <motion.div
-        variant={partVariants}
-        initial="hidden"
-        animate="visible"
+        variants={show_nav ? partVariants : null}
+        initial={show_nav ?`hidden` : null}
+        animate={show_nav ? `visible` : null}
         className={`${styles.nav_bar_part} ${styles.nav_bar_part_one}`}
       ></motion.div>
       <motion.div
@@ -44,9 +43,10 @@ function Navbar({ setNav }) {
         className={`${styles.nav_bar_part} ${styles.nav_bar_part_four}`}
       >
         <p>
-          <span>L|IN</span> <Image width="25" height="25" src={LinkedIn}></Image>
+          <span>L|IN</span>{" "}
+          <Image width="25" height="25" src={LinkedIn}></Image>
         </p>
-       
+
         <p>
           <span>T|R</span> <Image width="25" height="25" src={Twitter}></Image>
         </p>
