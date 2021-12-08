@@ -6,19 +6,38 @@
   $textPrimary: #D6D8D8;
   $textSecondary:  rgba(171, 171, 173, 0.14);
 } */
+  // #011627
+  //#10101A;
+  //#c03f2d
+  //#1E1E29
+  // #121212
+  //#10101A
 
-  $primary : #10101A;
-  $secondary: #1E1E29;
+  $primary :#10101A; 
+  $secondary:#1E1E29 ;
   $textPrimary: #D6D8D8;
   $textSecondary:  rgba(171, 171, 173, 0.14);
 ;
+
+
+.container h1:hover ,
+.container h2:hover , 
+.container h3:hover,
+.container h4:hover, 
+.container h5:hover, 
+.container h6:hover,  
+.container p:hover {
+  color:#7e7a79;
+  transition:.1s;
+  cursor:pointer;
+}
 
 .container{
   background:$primary;
   min-height:100vh;
   width:100%;
   margin:0;
-  padding:10px 55px;
+  padding:10px 80px;
   font-family:Secular One;
   @media(max-width:700px){
     padding:0px 25px;
@@ -29,34 +48,29 @@
 }
 
 .show_nav{
-  position:fixed;
-  transition:.441s;
-  transform:translateY(0vh);
-  background:pink;
+  display:block;
+  background:blue;
   width:100%;
   opacity:1;
   top:0;
   left:0;
-  z-index:9999;
+  z-index:2;
 
 }
 
 .hide_nav{
-  transition:.441s;
-  opacity:0;
-  position:fixed;
-  transform: translateY(-50vh);
+  display:none;
   width:100%;
   top:0;
   left:0;
   z-index:-1;
 }
 .nav{
-
+  position:relative;
   display:flex;
   justify-content:space-between;
   align-items:center;
-
+  z-index:99;
   .logo{
     font-style:regular;
     font-size:35px;
@@ -72,7 +86,7 @@
   }
   .menu_bar{
    // background:red;
-    height:15px;
+    height:10px;
     transition: 0.15s;
     display:flex;
     flex-direction:column;
@@ -80,10 +94,10 @@
     justify-content:space-between;
     
     cursor:pointer;
-   
+    
     &_arrow{
-      width:80px;
-      height:3px;
+      width:50px;
+      height:2px;
       background:$textPrimary;
       border-radius:10px;
       @media(max-width:700px){
@@ -91,11 +105,14 @@
         height:2px;
       }
     }
-    // &_arrow:nth-child(2){
-    //   //margin-top:10px;
-     
-    // }
+    &_clicked{
+
+    }
+    &_unclicked{
+
+    }
   }
+ 
 }
 
 .intro{

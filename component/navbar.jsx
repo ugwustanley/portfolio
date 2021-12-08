@@ -1,35 +1,62 @@
-import React from 'react'
-import styles from '../styles/navbar.module.scss'
+import React from "react";
+import Image from "next/image";
+import styles from "../styles/navbar.module.scss";
+import LinkedIn from "../images/icons/linkedin-2.svg";
+import Github from "../images/icons/github.svg";
+import Twitter from "../images/icons/twitter.svg";
+import { motion, AnimatePresence } from "framer-motion";
 
-function Navbar({setNav}){
+function Navbar({ setNav }) {
+  const partVariants = {
+    hidden: {
+      opacity: 0.5,
+      y: -100,
+    },
+    visible: {
+      opacity: 1,
+      y: 100,
+      transition: {
+        duration: 30,
+        delay: 20,
+        ease: "easeOut",
+      },
+    },
+  };
+  return (
+    <div className={styles.nav_bar}>
+      <motion.div
+        variant={partVariants}
+        initial="hidden"
+        animate="visible"
+        className={`${styles.nav_bar_part} ${styles.nav_bar_part_one}`}
+      ></motion.div>
+      <motion.div
+        className={`${styles.nav_bar_part} ${styles.nav_bar_part_two}`}
+      >
+        <p>About Me</p>
+        <p>Projects</p>
+        <p>Contact</p>
+      </motion.div>
+      <motion.div
+        className={`${styles.nav_bar_part} ${styles.nav_bar_part_three}`}
+      ></motion.div>
+      <motion.div
+        className={`${styles.nav_bar_part} ${styles.nav_bar_part_four}`}
+      >
+        <p>
+          <span>L|IN</span> <Image width="25" height="25" src={LinkedIn}></Image>
+        </p>
+       
+        <p>
+          <span>T|R</span> <Image width="25" height="25" src={Twitter}></Image>
+        </p>
 
-  return(
-      <div className={styles.nav_bar}>
-                      
-                      <nav className={styles.nav}>
-                        <h1 className={styles.logo}>Stanlee</h1>
-
-                        <div className={styles.menu_bar} onClick={ () => setNav(false)}>
-                          <div className={styles.menu_bar_arrow}></div>
-                          <div className={styles.menu_bar_arrow}></div>
-                        </div>
-
-                      </nav>
-
-                      <div className={styles.nav_bar_links}>
-                           <h2 className={styles.nav_bar_links_link}>Home</h2>
-                           <h2 className={styles.nav_bar_links_link}>About Me</h2>
-                           <h2 className={styles.nav_bar_links_link}>Projects</h2>
-                           <h2 className={styles.nav_bar_links_link}>Contact Details</h2>
-
-                           <h1 className={styles.nav_bar_links_h1}>Connect With Me</h1>
-                      </div>
-
- 
-          
-      </div>
-  )
-
+        <p>
+          <span>G|HUB</span> <Image width="25" height="25" src={Github}></Image>
+        </p>
+      </motion.div>
+    </div>
+  );
 }
 
 export default Navbar;
