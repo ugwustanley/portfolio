@@ -114,13 +114,15 @@ $textSecondary: rgba(171, 171, 173, 0.14);
 
 .nav_email{
   display:none;
+
   @media (max-width:900px){
+    font-family: 'Inter';
     display:block;
     position:fixed !important;
     grid-columns:2/4;
     bottom:-5rem;
     color:#fff;
-    opacity:.1;
+    opacity:.01;
     font-size:5rem ;
   }
 }

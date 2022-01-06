@@ -78,7 +78,7 @@ function Navbar({ setNav, show_nav }) {
 
       <h1 className={`${styles.nav_email}`}>
           <marquee>
-              Ugwuchiagoziestanley@gmail.com   Ugwuchiagoziestanley@gmail.com
+              ugwuchiagoziestanley@gmail.com   ugwuchiagoziestanley@gmail.com  ugwuchiagoziestanley@gmail.com
           </marquee>
       </h1>
     </motion.div>
