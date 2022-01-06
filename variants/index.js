@@ -1,3 +1,27 @@
+export const navVariant = (delay) =>{
+        return {
+                hidden: {
+                background: null
+                },
+                exit: {
+                background: null,
+                transition:{
+                    duration: .3,
+                    delay: 0,
+                    ease: "easeInOut",
+                 }
+                },
+                visible: {
+                background:'#0a192f',
+                transition: {
+                    duration: .3,
+                    delay: delay + 0.3,
+                    ease: "easeInOut",
+                }
+            }
+        }
+  }
+
  export const partVariant = (delay) =>{
         return {
                 hidden: {

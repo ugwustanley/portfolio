@@ -6,14 +6,20 @@ import Github from "../images/icons/github.svg";
 import Twitter from "../images/icons/twitter.svg";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { partVariant, navLinkVariant, navSocialVariant} from '../variants/index.js'
+import { partVariant, navLinkVariant, navSocialVariant, navVariant} from '../variants/index.js'
 
 function Navbar({ setNav, show_nav }) {
 
  
   return (
-    <div className={styles.nav_bar}>
-
+    <>
+    <motion.div
+        initial={`hidden`}
+        exit={`exit`}
+        animate= {show_nav? `visible`: ``}
+        variants={navVariant(0.6)}        
+        className={styles.nav_bar}>
+        
       <motion.div
         initial={`hidden`}
         exit={`exit`}
@@ -69,7 +75,11 @@ function Navbar({ setNav, show_nav }) {
           <span>Github</span> <Image width="25" height="25" src={Github}></Image>
         </motion.p>
       </motion.div>
-    </div>
+
+      
+    </motion.div>
+    {/* <h1 className={`${styles.nav_email}`}>Ugwuchiagoziestanley@gmail.com</h1> */}
+    </>
   );
 }
 
