@@ -22,24 +22,19 @@ $textSecondary: rgba(171, 171, 173, 0.14);
   @media (max-width: 900px) {
     grid-template-columns: repeat(2, 1fr);
     &_part_one,
-    &_part_three {
+    &_part_four {
       display: none;
     }
   }
   @media (max-width: 400px) {
-    // grid-template-columns: 3fr 2fr;
-    // grid-gap:0px;
+    grid-template-columns: 6fr 5fr;
+     grid-gap:0px;
     &_part_four {
-      // align-content: flex-end !important;
+      display:none;
       padding-bottom:3rem;
-      // img{
-      //   width:30rem !important;
-      // }
       p{
         margin-left:auto;
         margin-right:15px;
-
-        // font-size:1.5rem;
       }
     }
   }
@@ -47,7 +42,7 @@ $textSecondary: rgba(171, 171, 173, 0.14);
     background: $primary;
   }
   &_part_two,
-  &_part_four {
+  &_part_three {
     padding-left: 1.5rem;
     display: grid;
     align-content: center;
