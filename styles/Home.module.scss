@@ -338,12 +338,11 @@
      h2{
         font-size:3.5rem;
         line-height:2rem;
-        color:#8892b0;
+        color:#ccd6f6;
         margin:0;
         @media(max-width:600px){
-          font-size:2rem;
+          font-size:2.1rem;
           line-height:3.4rem;
-          color:#8892b0;
           margin-bottom:-1rem;
           // font-family:'Poppins';
          }
@@ -360,6 +359,13 @@
        padding-right:2rem;
        color:#e6f1ff;
        font-family: 'Poppins', sans-serif;
+       transition: .4s;
+       &:hover{
+         padding-right:3rem;
+         color:#8892b0;
+        // border: 2px solid #e29d07;
+        // background:#e29d07;
+       }
      }
      p{
       color:#ccd6f6;
@@ -369,7 +375,7 @@
       margin-top:1.5rem;
       font-family: 'Poppins', sans-serif;
       @media(max-width:600px){
-        font-size:.8rem;
+        font-size:.85rem;
         line-height:2rem;
         margin-top:1.2rem;
       }
