@@ -45,7 +45,7 @@
     padding:0px 25px;
    }
    @media(max-width:400px){
-    padding:0px 15px;
+    padding:0px 20px;
    }
 }
 
@@ -330,6 +330,10 @@
         font-size:1.2rem;
         margin:0;
         margin-bottom:2rem;
+        // @media(max-width:600px){
+        //   text-align:center;
+        //   // font-family:'Poppins';
+        //  }
       }
      h2{
         font-size:3.5rem;
@@ -337,12 +341,15 @@
         color:#8892b0;
         margin:0;
         @media(max-width:600px){
-          font-size:2rem;
-          // line-height:4rem;
+          font-size:3rem;
+          line-height:3.4rem;
           color:#8892b0;
+          margin-bottom:-1rem;
+          // font-family:'Poppins';
          }
      }
      .hire_me_btn{
+       margin-top:1rem;
        border:none;
        border-left:2px solid #e29d07;
        border-bottom:2px solid #e29d07;
@@ -362,8 +369,8 @@
       margin-top:1.5rem;
       font-family: 'Poppins', sans-serif;
       @media(max-width:600px){
-        font-size:.9rem;
-        line-height:1.6rem;
+        font-size:1rem;
+        line-height:2rem;
       }
       // @media(max-width:400px){
       //   font-size:16px;
