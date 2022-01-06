@@ -1,36 +1,38 @@
-/* :root{
 
-  --primary-color: #0000
-   $primary : #10101A;
-  $secondary: #1E1E29;
-  $textPrimary: #D6D8D8;
-  $textSecondary:  rgba(171, 171, 173, 0.14);
-} */
-  // #011627
-  //#10101A;
-  //#c03f2d
-  //#1E1E29
-  // #121212
-  //#10101A
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-  $primary :#10101A; 
+  $primary :#0a192f; 
   $secondary:#1E1E29 ;
   $textPrimary: #D6D8D8;
   $textSecondary:  rgba(171, 171, 173, 0.14);
+  $dark-navy: #020c1b;
+  $navy: #0a192f;
+  $light-navy: #112240;
+  $lightest-navy: #233554;
+  $navy-shadow: rgba(2,12,27,0.7);
+  $dark-slate: #495670;
+  $slate: #8892b0;
+  $light-slate: #a8b2d1;
+  $lightest-slate: #ccd6f6;
+  $white: #e6f1ff;
+  $green: #64ffda;
+  $green-tint: rgba(100,255,218,0.1);
+  $font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+  $font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 ;
 
 
-.container h1:hover ,
-.container h2:hover , 
-.container h3:hover,
-.container h4:hover, 
-.container h5:hover, 
-.container h6:hover,  
-.container p:hover {
-  color:#7e7a79;
-  transition:.1s;
-  cursor:pointer;
-}
+// .container h1:hover ,
+// .container h2:hover , 
+// .container h3:hover,
+// .container h4:hover, 
+// .container h5:hover, 
+// .container h6:hover,  
+// .container p:hover {
+//   color:#7e7a79;
+//   transition:.1s;
+//   cursor:pointer;
+// }
 
 .container{
   background:$primary;
@@ -38,7 +40,7 @@
   width:100%;
   margin:0;
   padding:10px 80px;
-  font-family:Secular One;
+  font-family: 'Inter', sans-serif;
   @media(max-width:700px){
     padding:0px 25px;
    }

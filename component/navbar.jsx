@@ -6,54 +6,68 @@ import Github from "../images/icons/github.svg";
 import Twitter from "../images/icons/twitter.svg";
 import { motion, AnimatePresence } from "framer-motion";
 
+import { partVariant, navLinkVariant, navSocialVariant} from '../variants/index.js'
+
 function Navbar({ setNav, show_nav }) {
-  const partVariants = {
-    hidden: {
-      y: -100,
-    },
-    visible: {
-      y: 0,
-      transition: {
-        duration: 10,
-        delay: 2,
-        ease: "easeIn",
-      },
-    },
-  };
-  console.log(show_nav);
+
+ 
   return (
     <div className={styles.nav_bar}>
+
       <motion.div
-        variants={show_nav ? partVariants : null}
-        initial={show_nav ?`hidden` : null}
-        animate={show_nav ? `visible` : null}
+        initial={`hidden`}
+        exit={`exit`}
+        animate= {show_nav? `visible`: ``}
+        variants={partVariant(0)}       
         className={`${styles.nav_bar_part} ${styles.nav_bar_part_one}`}
       ></motion.div>
+
       <motion.div
+        initial={`hidden`}
+        animate= {show_nav? `visible`: ``}
+        exit={`exit`}
+        variants={partVariant(.2)}
         className={`${styles.nav_bar_part} ${styles.nav_bar_part_two}`}
       >
-        <p>About Me</p>
-        <p>Projects</p>
-        <p>Contact</p>
+        <motion.p
+          variants={navLinkVariant(.8)}
+        >About Me</motion.p>
+        <motion.p
+          variants={navLinkVariant(.7)}
+        >Projects</motion.p>
+        <motion.p
+          variants={navLinkVariant(.6)}
+        >Contact</motion.p>
       </motion.div>
+
       <motion.div
+        initial={`hidden`}
+        animate= {show_nav? `visible`: ``}
+        exit={`exit`}
+        variants={partVariant(.4)}
         className={`${styles.nav_bar_part} ${styles.nav_bar_part_three}`}
       ></motion.div>
+
+
       <motion.div
+        initial={`hidden`}
+        animate= {show_nav? `visible`: ``}
+        exit={`exit`}
+        variants={partVariant(.6)}
         className={`${styles.nav_bar_part} ${styles.nav_bar_part_four}`}
       >
-        <p>
-          <span>L|IN</span>{" "}
+        <motion.p variants={navSocialVariant(.8)}>
+          <span>Linkedin</span>{" "}
           <Image width="25" height="25" src={LinkedIn}></Image>
-        </p>
+        </motion.p>
 
-        <p>
-          <span>T|R</span> <Image width="25" height="25" src={Twitter}></Image>
-        </p>
+        <motion.p variants={navSocialVariant(1)}>
+          <span>Twitter</span> <Image width="25" height="25" src={Twitter}></Image>
+        </motion.p>
 
-        <p>
-          <span>G|HUB</span> <Image width="25" height="25" src={Github}></Image>
-        </p>
+        <motion.p variants={navSocialVariant(1.2)}>
+          <span>Github</span> <Image width="25" height="25" src={Github}></Image>
+        </motion.p>
       </motion.div>
     </div>
   );

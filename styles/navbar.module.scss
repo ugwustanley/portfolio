@@ -17,6 +17,7 @@ $textSecondary: rgba(171, 171, 173, 0.14);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1px;
+
   @media (max-width: 900px) {
     grid-template-columns: repeat(2, 1fr);
     &_part_one,
