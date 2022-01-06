@@ -27,7 +27,7 @@ $textSecondary: rgba(171, 171, 173, 0.14);
     }
   }
   @media (max-width: 400px) {
-    grid-template-columns: 6fr 5fr;
+    grid-template-columns: 1fr 1fr;
      grid-gap:0px;
     &_part_four {
       display:none !important;
@@ -66,8 +66,14 @@ $textSecondary: rgba(171, 171, 173, 0.14);
     font-size: 2rem;
     line-height: 2.5rem;
     font-weight: 400;
+    // background:red;
+    // overflow:visible;
+    p{
+      width:150%;
+    }
     @media (max-width: 900px) {
       padding-left: 80px;
+      z-index:999;
     }
     @media (max-width: 700px) {
       padding-left: 25px;
@@ -124,5 +130,6 @@ $textSecondary: rgba(171, 171, 173, 0.14);
     color:#fff;
     opacity:.05;
     font-size:6rem ;
+    z-index:9999;
   }
 }
