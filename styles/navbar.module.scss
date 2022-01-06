@@ -31,13 +31,13 @@ $textSecondary: rgba(171, 171, 173, 0.14);
     &_part_four {
       align-content: flex-end !important;
       padding-bottom:3rem;
-      img{
-        width:1rem;
-      }
+      // img{
+      //   width:30rem !important;
+      // }
       p{
         margin-left:auto;
         margin-right:15px;
-        font-size:.7rem;
+        font-size:1.5rem;
       }
     }
   }
