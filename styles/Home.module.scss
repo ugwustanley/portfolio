@@ -341,7 +341,7 @@
         color:#8892b0;
         margin:0;
         @media(max-width:600px){
-          font-size:3rem;
+          font-size:2rem;
           line-height:3.4rem;
           color:#8892b0;
           margin-bottom:-1rem;
@@ -369,8 +369,9 @@
       margin-top:1.5rem;
       font-family: 'Poppins', sans-serif;
       @media(max-width:600px){
-        font-size:1rem;
+        font-size:.8rem;
         line-height:2rem;
+        margin-top:1.2rem;
       }
       // @media(max-width:400px){
       //   font-size:16px;
