@@ -26,14 +26,18 @@ $textSecondary: rgba(171, 171, 173, 0.14);
     }
   }
   @media (max-width: 400px) {
-    grid-template-columns: 3fr 2fr;
+    // grid-template-columns: 3fr 2fr;
     grid-gap:0;
     &_part_four {
       align-content: flex-end !important;
-      padding-bottom:2rem;
+      padding-bottom:3rem;
+      img{
+        width:1rem;
+      }
       p{
         margin-left:auto;
         margin-right:15px;
+        font-size:.7rem;
       }
     }
   }
