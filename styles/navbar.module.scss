@@ -28,16 +28,17 @@ $textSecondary: rgba(171, 171, 173, 0.14);
   }
   @media (max-width: 400px) {
     // grid-template-columns: 3fr 2fr;
-    // grid-gap:0;
+    // grid-gap:0px;
     &_part_four {
-      align-content: flex-end !important;
+      // align-content: flex-end !important;
       padding-bottom:3rem;
       // img{
       //   width:30rem !important;
       // }
       p{
-        // margin-left:auto;
-        margin-right:auto;
+        margin-left:auto;
+        margin-right:15px;
+
         // font-size:1.5rem;
       }
     }
@@ -72,7 +73,7 @@ $textSecondary: rgba(171, 171, 173, 0.14);
     }
     @media (max-width: 400px) {
       padding-left: 15px;
-      font-size:2.2rem;
+      font-size:2rem;
     }
   }
 }
