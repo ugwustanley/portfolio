@@ -14,6 +14,7 @@ import Logo from "../images/stan-1.svg";
 import WavyHand from "../images/wavy 1.png";
 import Navbar from "../component/navbar";
 import styles from "../styles/Home.module.scss";
+import {helloVariant} from '../variants/index.js';
 
 export default function Home() {
   const [show_nav, setShow_nav] = useState(false);
@@ -76,7 +77,12 @@ export default function Home() {
                   initial={show_nav ? { rotate: 0 } : null}
                   animate={show_nav ? { rotate: 90 } : null}
                   transition={{ duration: 0.1, ease: "linear" }}
-                  className={styles.menu_bar_arrow}
+                  className={
+                    show_nav
+                      ? `${styles.menu_bar_arrow} ${styles.arrow_clear}`
+                      : `${styles.menu_bar_arrow}`
+                  }
+                 
                 ></motion.div>
               </div>
             </nav>
@@ -91,14 +97,21 @@ export default function Home() {
               <div className={styles.about_me_main_s1_p}>
                 <h5>
                   Hello there{" "}
-                  <span className={styles.wavyhand}>
+                  <motion.div
+                      initial={`hidden`}
+                      animate= {`visible`}
+                      variants={helloVariant()}  
+                      className={styles.wavyhand}
+                      // 
+                      >
+                      
                     <Image
                       src={WavyHand}
                       width={25}
                       height={25}
                       alt="My memoji smiling face"
                     />
-                  </span>{" "}
+                  </motion.div>{" "}
                   , meet
                 </h5>
                 <h2>UGWU STANLEY</h2>

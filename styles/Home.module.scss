@@ -108,8 +108,15 @@
         height:2px;
       }
     }
+    &_arrow:nth-child(2) {
+      background:#e29d07;
+    }
   }
  
+}
+
+.arrow_clear{
+  background:#fff !important;
 }
 
 .intro{
@@ -330,6 +337,7 @@
         font-size:1.2rem;
         margin:0;
         margin-bottom:2rem;
+        display:flex;
         // @media(max-width:600px){
         //   text-align:center;
         //   // font-family:'Poppins';
@@ -420,7 +428,8 @@
   
 }
 .wavyhand{
-  width:100px !important;
+  width:auto !important;
+  margin:0 .2rem;
 }
 .download_cv{
 

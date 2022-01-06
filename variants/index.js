@@ -105,3 +105,19 @@ export const navSocialVariant = (delay) =>{
             }
     }
   }
+  export const helloVariant = () =>{
+    return {
+            hidden: {
+                rotate:0
+            },
+            visible: {
+            rotate: [25, 0 , 25, 0, 0 , 0 , 0],
+            transition: {
+                duration: 1,
+                delay: 0,
+                ease: "easeOut",
+                yoyo:Infinity
+            }
+        }
+    }
+}
