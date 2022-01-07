@@ -9,7 +9,10 @@
     @media (max-width:900px){
         grid-template-columns:1fr;
     }
-
+    a{
+        width:inherit;
+        height:inherit;
+    }
     &_image{
         background:#112240;
         border-top-left-radius:5px;

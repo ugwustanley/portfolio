@@ -3,28 +3,32 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  Envelope,
-} from "phosphor-react";
+import { Envelope } from "phosphor-react";
 import LinkedIn from "../images/icons/linkedin-2.svg";
 import Github from "../images/icons/github.svg";
 import Twitter from "../images/icons/twitter.svg";
 import Memoji from "../images/[removal 1.png";
 import Logo from "../images/stan-1.svg";
+import Bundle from '../images/bundle-home.png'
+import Auth from '../images/auth-home2.png'
+import Book from '../images/book-home2.png'
+import Rand from '../images/rand-home2.png'
+import Serokell from '../images/serokell-home.png'
+import Port from '../images/port-home.png'
 import WavyHand from "../images/wavy 1.png";
 import Navbar from "../component/navbar";
-import Preloader from '../component/preloader';
+import Preloader from "../component/preloader";
 import Project from "../component/project";
 import styles from "../styles/Home.module.scss";
 import { helloVariant } from "../variants/index.js";
 
 export default function Home() {
-  const [show_nav, setShow_nav] = useState(false); const [showPreloader, setShowPreloader] = useState(true);
+  const [show_nav, setShow_nav] = useState(false);
+  const [showPreloader, setShowPreloader] = useState(true);
 
   setTimeout(() => {
     setShowPreloader(false);
   }, 5000);
-
 
   const setNav = (value) => {
     setShow_nav(value);
@@ -53,9 +57,7 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <AnimatePresence>
-          {showPreloader ? <Preloader /> : null}
-        </AnimatePresence>
+      <AnimatePresence>{showPreloader ? <Preloader /> : null}</AnimatePresence>
       {/* <div className={show_nav ? styles.show_nav : styles.hide_nav}> */}
       <AnimatePresence>
         {show_nav ? <Navbar setNav={setNav} show_nav={show_nav} /> : null}
@@ -155,14 +157,67 @@ export default function Home() {
             <div className={styles.projects_heading_arrow}></div>
           </div>
 
-          <Project />
-          <Project />
+          <Project
+             img={Bundle}
+             name="Bundle"
+             text="Bundle keeps track of your transaction history and helps businesses exchange their histories to promote transparency."
+             tools="FRAMER MOTION, NEXTJS, CHARTJS"
+             link="https://bundle-site.netlify.app"
+             github="https://github.com/ugwustanley/bundle"
+           />
+
+          <Project
+             img={Auth}
+             name="Authrocket"
+             text="Authrocket is a password based authentication system similar to firebase authentication except that its easier to use. Its designed just for basic login and signup operations"
+             tools="NODEJS, EXPRESS, MONGODB, REACTJS"
+             link="https://authrocket.netlify.app"
+             github="https://github.com/ugwustanley/authrocket-frontend"
+           />
+
+          <Project
+             img={Port}
+             name="Portfolio"
+             text="My portfolio website"
+             tools="FRAMER MOTION, NEXTJS"
+             link="https://stanlee-x.netlify.app/"
+             github="https://github.com/ugwustanley/portfolio"
+           />
+
+          <Project
+             img={Book}
+             name="Bookmarks"
+             text="Bookmarks is a landing page for an application used for bookmarking websites. This is a frontend mentor challenge"
+             tools="HTML, CSS, JAVASCRIPT"
+             link="https://book-marks.netlify.app/"
+             github="#"
+           />
+
+          <Project
+             img={Rand}
+             name="Autorand"
+             text="Autorand is a frontend implementation of an e-commerce and financial technology solution"
+             tools="CHARTJS, REACT"
+             link="#"
+             github="https://github.com/ugwustanley/kuda"
+           />
+
+          <Project
+             img={Serokell}
+             name="Serokell"
+             text="This is my solution for a frontend assessment challenge"
+             tools="REACTJS"
+             link="https://serokell-frontend.netlify.app/"
+             github="https://github.com/ugwustanley/serokell-frontend"
+           />
+          
         </section>
 
         <section className={styles.contact} id="contact">
           <h4>Got a project in mind?</h4>
           <h2>
-            Get In Touch. <Envelope color="#ABABAD" weight="regular" size={80} />
+            Get In Touch.{" "}
+            <Envelope color="#ABABAD" weight="regular" size={80} />
           </h2>
           <p>ugwuchiagoziestanley@gmail.com</p>
           <p> +(234) 906 270 9826</p>
@@ -178,27 +233,29 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <div className={styles.footer_line}></div>
-       <div className={styles.footer_main}>
-        <div className={styles.footer_links}>
+        <div className={styles.footer_main}>
+          <div className={styles.footer_links}>
             <p>
-                <span>LN</span>{" "}
-                <Image width="25" height="25" src={LinkedIn}></Image>
-              </p>
+              <span>LN</span>{" "}
+              <Image width="25" height="25" src={LinkedIn}></Image>
+            </p>
 
-              <p >
-                <span>TW</span>{" "}
-                <Image width="25" height="25" src={Twitter}></Image>
-              </p>
+            <p>
+              <span>TW</span>{" "}
+              <Image width="25" height="25" src={Twitter}></Image>
+            </p>
 
-              <p>
-                <span>GH</span>{" "}
-                <Image width="25" height="25" src={Github}></Image>
-              </p>
-          
+            <p>
+              <span>GH</span>{" "}
+              <Image width="25" height="25" src={Github}></Image>
+            </p>
+          </div>
+          <p className={styles.copy}>
+            Copyright ©{" "}
+            <Link href="https://github.com/ugwustanley">Ugwu Stanley</Link>{" "}
+            2022, All rights reserved.
+          </p>
         </div>
-        <p className={styles.copy}>Copyright © <Link href="https://github.com/ugwustanley">Ugwu Stanley</Link>  2022, All rights reserved.</p>
-       </div>
-
       </footer>
     </div>
   );
