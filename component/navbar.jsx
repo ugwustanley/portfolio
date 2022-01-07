@@ -71,20 +71,26 @@ function Navbar({ setNav, show_nav }) {
           variants={partVariant(0.6)}
           className={`${styles.nav_bar_part} ${styles.nav_bar_part_four}`}
         >
-          <motion.p variants={navSocialVariant(0.8)}>
-            <span>Linkedin</span>{" "}
-            <Image width="25" height="25" src={LinkedIn}></Image>
-          </motion.p>
+          <Link href="https://www.linkedin.com/in/ugwu-chiagozie-2157601a7/">
+            <motion.p variants={navSocialVariant(0.8)}>
+              <span>Linkedin</span>{" "}
+              <Image width="25" height="25" src={LinkedIn}></Image>
+            </motion.p>
+          </Link>
 
-          <motion.p variants={navSocialVariant(1)}>
-            <span>Twitter</span>{" "}
-            <Image width="25" height="25" src={Twitter}></Image>
-          </motion.p>
+          <Link href="https://twitter.com/chiagozie_ugwu">
+            <motion.p variants={navSocialVariant(1)}>
+              <span>Twitter</span>{" "}
+              <Image width="25" height="25" src={Twitter}></Image>
+            </motion.p>
+          </Link>
 
-          <motion.p variants={navSocialVariant(1.2)}>
-            <span>Github</span>{" "}
-            <Image width="25" height="25" src={Github}></Image>
-          </motion.p>
+          <Link href="https://github.com/ugwustanley">
+            <motion.p variants={navSocialVariant(1.2)}>
+              <span>Github</span>{" "}
+              <Image width="25" height="25" src={Github}></Image>
+            </motion.p>
+          </Link>
         </motion.div>
 
         <h1 className={`${styles.nav_email}`}>
