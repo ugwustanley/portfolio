@@ -17,7 +17,7 @@ $textSecondary: rgba(171, 171, 173, 0.14);
   z-index: 1;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px;
+  grid-gap: 2px;
 
   @media (max-width: 900px) {
     grid-template-columns: repeat(2, 1fr);
@@ -39,7 +39,7 @@ $textSecondary: rgba(171, 171, 173, 0.14);
     }
   }
   &_part {
-    background: $primary;
+    background: #112240;
   }
   &_part_two,
   &_part_four {

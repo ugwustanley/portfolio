@@ -368,6 +368,9 @@
        color:#e6f1ff;
        font-family: 'Poppins', sans-serif;
        transition: .4s;
+       @media(max-width:600px){
+        font-size:.8rem;
+       }
        &:hover{
          padding-right:3rem;
          color:#8892b0;

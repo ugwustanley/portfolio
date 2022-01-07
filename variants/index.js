@@ -13,6 +13,7 @@ export const navVariant = (delay) =>{
                 },
                 visible: {
                 background:'#0a192f',
+                //'#0a192f' '#e29d07',
                 transition: {
                     duration: .3,
                     delay: delay + 0.3,

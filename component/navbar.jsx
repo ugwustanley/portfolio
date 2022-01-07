@@ -36,10 +36,10 @@ function Navbar({ setNav, show_nav }) {
         className={`${styles.nav_bar_part} ${styles.nav_bar_part_two}`}
       >
         <motion.p
-          variants={navLinkVariant(.8)}
+          variants={navLinkVariant(1)}
         >About Me</motion.p>
         <motion.p
-          variants={navLinkVariant(.7)}
+          variants={navLinkVariant(.8)}
         >Projects</motion.p>
         <motion.p
           variants={navLinkVariant(.6)}
