@@ -147,6 +147,7 @@ export default function Home() {
           </div>
 
           <Project />
+          <Project />
         </section>
 
         <section className={styles.contact}>
