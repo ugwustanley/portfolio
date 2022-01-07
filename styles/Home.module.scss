@@ -119,161 +119,6 @@
   background:#fff !important;
 }
 
-.intro{
-  @media(max-width:450px){
-    min-height:calc(100vh - 100px);
-    position:relative;
-    display:flex;
-    flex-direction:column;
-  }
-  &_p{
-    font-family:Secular One;
-    color:#fff;
-    font-size:20px;
-    margin:0;
-    margin-top:60px;
-    @media(max-width:600px){
-      font-size:16px;
-     }
-    @media(max-width:400px){
-      font-size:16px;
-      margin-top:50px;
-      
-     }
-  }
-  &_h1{
-      font-size:75px;
-      font-weight:bold;
-      font-family:Poppins;
-      color:$textPrimary;
-      margin:0;
-      margin-top:10px;
-      @media(max-width:1080px){
-        font-size:60px;
-      }
-      @media(max-width:900px){
-        font-size:50px;
-      }
-      @media(max-width:600px){
-        font-size:40px;
-      }
-      @media(max-width:600px){
-        font-size:37px;
-        line-height:40px;
-      }
-      @media(max-width:450px){
-        font-size:30px;
-        line-height:35px;
-        
-      //   background:linear-gradient( pink , blue, red);
-      //   background-clip:text;
-      //   -webkit-text-fill-color:transparent;
-      //  // color:rgb(247, 114, 6);
-      }
-      
-      // @media(max-width:330px){
-      //   font-size: 24px;
-      //  }
-  }
-  &_h4{
-    font-size:35px;
-    color:$textPrimary;
-    font-family:Poppins;
-    margin:0;
-    margin-top:-10px;
-    
-    @media(max-width:1080px){
-      font-size:27px;
-    }
-    @media(max-width:800px){
-      font-size:22px;
-    }
-    @media(max-width:600px){
-      font-size:18px;
-    }
-    @media(max-width:450px){
-      font-size:20px;
-    }
-    @media(max-width:400px){
-     font-size:14px;
-     margin-top:10px;
-     line-height:25px;
-     font-weight:500;
-     
-     }
-  }
-  .hire_me_btn{
-       display:flex;
-       align-items:center;
-       cursor:pointer;
-       outline:0;
-       border:none;
-       background-color:transparent;
-       margin-top:20px;
-       @media(max-width:450px){
-         margin-top:0px;
-         margin-left:-5px;
-       }
-       &_p{
-         font-size:20px;
-         color:$textPrimary;
-         font-family:Secular One;
-         @media(max-width:600px){
-          font-size:20px;
-          
-        }
-        @media(max-width:400px){
-          font-size:15px;
-        }
-       }
-       &_arrow{
-         width:150px;
-         background:$textPrimary;
-         height:2px;
-         margin-left:8px;
-         @media(max-width:600px){
-          width:150px;
-        }
-        @media(max-width:400px){
-          width:120px;
-          
-        }
-       }
-  }
-}
-
-.nav_indicator{
-   display:flex;
-   align-items:baseline;
-   font-family: Secular One;
-   color:$textPrimary;
-  //  left:55px;
-  //  top:calc(100vh - 100px);
-   &_1 , &_2, &_3 , &_4{
-    margin-right:10px;
-  }
-  &_1{
-    font-size:30px;
-  }
-  @media(max-width:450px){
-   
-   
-  }
-}
-
-.intro_socials{
-  margin-left:auto;
-  width:140px;
-  display:flex;
-  justify-content:space-between;
-  justify-self: flex-right;
-  margin-top:40px;
-  @media(max-width:450px){
-    // position:absolute;
-    // bottom:120px;
-    // right:15px;
-  }
-}
 
 .about_me{
     font-family: "Inter";
@@ -466,91 +311,90 @@
     }
   }
 }
-
 .contact{
-  margin-bottom:50px;
-  @media(max-width:450px){
-    margin-top:200px;
+  color:#ccd6f6;
+  margin-top:5rem;
+  h4{
+    color:#8892b0;
+    font-size:1.2rem;
+    font-weight:400;
+    margin:0;
+    @media(max-width:600px){
+      font-size:1rem;
+    }
   }
-  &_heading{
-
+  h2{
+    font-family:"Poppins";
+    font-size:4rem;
+    margin:0;
     display:flex;
-    align-items:center;
-    cursor:pointer;
-    outline:0;
-    border:none;
-    background-color:transparent;
-    width:fit-content;
-    margin-left:auto;
-    margin-top:80px;
-    margin-bottom:70px;
-    @media(max-width:450px){
-      margin-bottom:30px;
-    }
-   
-    &_p{
-      font-size:20px;
-      color:$textPrimary;
-      font-family:Secular One;
-      margin-left:8px;
-      @media(max-width:600px){
-        font-size:20px;
-      }
-    }
-    &_arrow{
-      width:150px;
-      background:$textPrimary;
-      height:2px;
-        @media(max-width:600px){
-         width:120px;
-        }
-      
-    }
-  }
-  &_details{
-    text-align:center;
-    color:#ABABAD;
-    margin-top:50px;
+    @media(max-width:600px){
+      font-size:2.5rem;
+     
+      // font-family:'Poppins';
+     }
     
-    &_phone{
-      margin:0;
-      margin-bottom:5px;
-      font-size:18px;
-      @media(max-width:400px){
-        font-size:16px;
-        font-weight:500;
-      }
-    }
-    &_email{
-      margin:0;
-      font-size:18px;
-      @media(max-width:400px){
-        font-size:16px;
-        font-weight:500;
-      }
-    }
-    &_line{
-      background:#ABABAD;
-      width:200px;
-      height:2px;
-      border-radius:10px;
-      margin:0;
-      margin:auto;
-    }
-    &_socials{
-      margin:auto;
-      width:140px;
-      display:flex;
-      justify-content:space-between;
-      justify-self: flex-right;
-      margin-top:8px;
+    svg{
+      // width:20px !important;
+      margin-top:.51rem;
+      @media(max-width:600px){
+        width:50px !important;
+        margin-top:-.61rem;
+       }
     }
   }
-
+  p{
+    margin:0;
+    text-decoration: underline;
+    font-weight:300;
+    margin-top:1rem;
+    @media(max-width:600px){
+      font-size:.95rem;
+    }
+  }
 }
-
 .footer{
-
+  margin-top:3rem;
+  padding-bottom:2rem;
+  &_main{
+    display:flex;
+    justify-content: space-between;
+    @media (max-width:600px){
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+  &_line{
+    width:100%;
+    height:2px;
+    background:#112240;
+    margin:auto;
+    // margin-left:-20px;
+    // margin-right:-20px;
+  
+  }
+  .copy{
+    color:#233554;
+    font-size:.8rem;
+    @media (max-width:600px){
+      margin:auto;
+    }
+  }
+  &_links{
+    display:flex;
+    // justify-self: flex-end;
+    color:#fff;
+    // margin:auto;
+    @media (max-width:600px){
+      margin:auto;
+    }
+    p{
+      display:flex;
+      align-items:center;
+      margin-right:1rem;
+      font-size:.9rem;
+    }
+  }
   &_text{
     color:$textSecondary;
     text-align:right;

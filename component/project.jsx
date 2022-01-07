@@ -14,7 +14,7 @@ function Project({ setNav, show_nav }) {
     <motion.div
         initial={`hidden`}
         whileInView={'visible'}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         variants={projectVariant()}        
         className={styles.project}>
         <div className={styles.project_image}>
@@ -26,7 +26,7 @@ function Project({ setNav, show_nav }) {
                 <motion.div
                     initial={`hidden`}
                     whileInView={'visible'}
-                    viewport={{ once: false }}
+                    viewport={{ once: true }}
                     variants={imageVariant()}
                 >
                        <Image src={Bundle}/>
