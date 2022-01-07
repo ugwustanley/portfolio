@@ -80,9 +80,9 @@ export const navLinkVariant = (delay) =>{
 export const navSocialVariant = (delay) =>{
   return {
             hidden: {
-              y: 30,
+              y: 50,
               opacity: 0,
-              skewY: -5,
+            //   skewY: -5,
             },
             exit: {
             y: 50,
@@ -97,10 +97,10 @@ export const navSocialVariant = (delay) =>{
             visible: {
             y: 0,
             opacity:1,
-            skewY:0,
+            // skewY:0,
                 transition: {
                     duration: .6,
-                    delay: delay,
+                    delay: delay + 0.3,
                     ease: "easeInOut",
                 }
             }

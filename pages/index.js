@@ -135,85 +135,10 @@ export default function Home() {
               />
             </div>
           </div>
-        </section>
-
-
-
-
-          <section className={styles.intro}>
-            {/* header */}
-
-            <span>
-              <p className={styles.intro_p}>Hi, i&apos;m</p>
-              <motion.h1 className={styles.intro_h1}>
-                Ugwu Chiagozie Stanley
-              </motion.h1>
-              <h4 className={styles.intro_h4}>
-                a software developer who build innovative products
-              </h4>
-
-              <button className={styles.hire_me_btn}>
-                <p className={styles.hire_me_btn_p}>Hire me</p>
-                <div className={styles.hire_me_btn_arrow}></div>
-              </button>
-            </span>
-
-            <div className={styles.intro_socials}>
-              <LinkedinLogo size={25} color="#D6D8D8" weight="fill" />
-              <InstagramLogo color="#D6D8D8" weight="fill" size={25} />
-              <TwitterLogo size={25} color="#D6D8D8" weight="fill" />
-              <GithubLogo size={25} color="#D6D8D8" weight="fill" />
-            </div>
-
-            <div className={styles.nav_indicator}>
-              <h4 className={styles.nav_indicator_1}>01</h4>
-              <h4 className={styles.nav_indicator_2}>02</h4>
-              <h4 className={styles.nav_indicator_3}>03</h4>
-              <h4 className={styles.nav_indicator_4}>04</h4>
-            </div>
-          </section>
+        </section>     
         </div>
 
-        <section className={styles.about_me}>
-          <div className={styles.about_me_heading}>
-            <div className={styles.about_me_heading_arrow}></div>
-            <p className={styles.about_me_heading_p}>About me</p>
-          </div>
-
-          <div className={styles.about_me_main}>
-            <div className={styles.about_me_main_s1}>
-              <p className={styles.about_me_main_s1_p}>
-                <span>
-                  Hello there{" "}
-                  <span className="wavyhand">
-                    <Image
-                      src={WavyHand}
-                      className={styles.wavyHand}
-                      alt="My memoji smiling face"
-                    />
-                  </span>{" "}
-                </span>
-                , meet Stanley a software developer passionate about software
-                products and focused on building innovative pixel perfect
-                applications
-              </p>
-
-              <h4 className={styles.about_me_main_s1_h4}>Want to hire me?</h4>
-              <button className={styles.download_cv}>
-                <div className={styles.download_cv_arrows}></div>
-                <p className={styles.download_cv_p}>Download CV</p>
-              </button>
-            </div>
-            <div className={styles.about_me_main_s2}>
-              <Image
-                src={Memoji}
-                className={styles.memoji}
-                alt="My memoji smiling face"
-              />
-            </div>
-          </div>
-        </section>
-
+      
         <section className={styles.projects}>
           <div className={styles.projects_heading}>
             <p className={styles.projects_heading_p}>Featured Projects</p>
