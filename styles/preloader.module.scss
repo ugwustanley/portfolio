@@ -1,0 +1,11 @@
+.preloader{
+    position:fixed !important;
+    z-index:1000;
+    width:100vw;
+    height:100vh;;
+    top:0;
+    left:0;
+    background:#0a192f;
+    display:grid;
+    place-content:center;
+}

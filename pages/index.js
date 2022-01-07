@@ -4,12 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  InstagramLogo,
-  LinkedinLogo,
-  GithubLogo,
-  TwitterLogo,
-  GlobeHemisphereWest,
-  Signpost,
   Envelope,
 } from "phosphor-react";
 import LinkedIn from "../images/icons/linkedin-2.svg";
@@ -19,12 +13,18 @@ import Memoji from "../images/[removal 1.png";
 import Logo from "../images/stan-1.svg";
 import WavyHand from "../images/wavy 1.png";
 import Navbar from "../component/navbar";
+import Preloader from '../component/preloader';
 import Project from "../component/project";
 import styles from "../styles/Home.module.scss";
 import { helloVariant } from "../variants/index.js";
 
 export default function Home() {
-  const [show_nav, setShow_nav] = useState(false);
+  const [show_nav, setShow_nav] = useState(false); const [showPreloader, setShowPreloader] = useState(true);
+
+  setTimeout(() => {
+    setShowPreloader(false);
+  }, 5000);
+
 
   const setNav = (value) => {
     setShow_nav(value);
@@ -53,7 +53,9 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-
+      <AnimatePresence>
+          {showPreloader ? <Preloader /> : null}
+        </AnimatePresence>
       {/* <div className={show_nav ? styles.show_nav : styles.hide_nav}> */}
       <AnimatePresence>
         {show_nav ? <Navbar setNav={setNav} show_nav={show_nav} /> : null}

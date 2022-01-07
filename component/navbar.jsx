@@ -5,7 +5,7 @@ import styles from "../styles/navbar.module.scss";
 import LinkedIn from "../images/icons/linkedin-2.svg";
 import Github from "../images/icons/github.svg";
 import Twitter from "../images/icons/twitter.svg";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 import {
   partVariant,
