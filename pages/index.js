@@ -13,6 +13,7 @@ import Memoji from "../images/[removal 1.png";
 import Logo from "../images/stan-1.svg";
 import WavyHand from "../images/wavy 1.png";
 import Navbar from "../component/navbar";
+import Project from '../component/project';
 import styles from "../styles/Home.module.scss";
 import {helloVariant} from '../variants/index.js';
 
@@ -145,113 +146,7 @@ export default function Home() {
             <div className={styles.projects_heading_arrow}></div>
           </div>
 
-          <div className={styles.projects_main_1}>
-            <div className={styles.projects_main_1_card_1}>
-              <h1 className={styles.projects_main_1_card_1_h1}>02</h1>
-              <p className={styles.projects_main_1_card_1_tools}>
-                HTMl/css Javascript AOS
-              </p>
-
-              <h2 className={styles.projects_main_1_card_1_h2}>Bookmarks</h2>
-              <p className={styles.projects_main_1_card_1_desc}>
-                A landing page for bookmarks chrome extension
-              </p>
-
-              <div className={styles.projects_main_1_card_1_links}>
-                <span className={styles.projects_main_1_card_1_links_website}>
-                  Website
-                </span>
-
-                <GlobeHemisphereWest size={25} color="#D6D8D8" weight="fill" />
-
-                <span className={styles.projects_main_1_card_1_links_github}>
-                  GitHub
-                </span>
-
-                <GithubLogo size={25} color="#D6D8D8" weight="fill" />
-              </div>
-            </div>
-
-            <div className={styles.projects_main_1_card_2}>
-              <h1 className={styles.projects_main_1_card_2_h1}>01</h1>
-              <p className={styles.projects_main_1_card_2_tools}>
-                HTMl/css Javascript AOS
-              </p>
-
-              <h2 className={styles.projects_main_1_card_2_h2}>Bookmarks</h2>
-              <p className={styles.projects_main_1_card_2_desc}>
-                A landing page for bookmarks chrome extension
-              </p>
-
-              <div className={styles.projects_main_1_card_2_links}>
-                <span className={styles.projects_main_1_card_2_links_website}>
-                  Website
-                </span>
-
-                <GlobeHemisphereWest size={25} color="#D6D8D8" weight="fill" />
-
-                <span className={styles.projects_main_1_card_2_links_github}>
-                  GitHub
-                </span>
-
-                <GithubLogo size={25} color="#D6D8D8" weight="fill" />
-              </div>
-            </div>
-          </div>
-
-          <div className={styles.projects_main_2}>
-            <div className={styles.projects_main_2_card_3}>
-              <h1 className={styles.projects_main_2_card_3_h1}>03</h1>
-              <p className={styles.projects_main_2_card_3_tools}>
-                HTMl/css Javascript AOS
-              </p>
-
-              <h2 className={styles.projects_main_2_card_3_h2}>Bookmarks</h2>
-              <p className={styles.projects_main_2_card_3_desc}>
-                A landing page for bookmarks chrome extension
-              </p>
-
-              <div className={styles.projects_main_2_card_3_links}>
-                <span className={styles.projects_main_2_card_3_links_website}>
-                  Website
-                </span>
-
-                <GlobeHemisphereWest size={25} color="#D6D8D8" weight="fill" />
-
-                <span className={styles.projects_main_2_card_3_links_github}>
-                  GitHub
-                </span>
-
-                <GithubLogo size={25} color="#D6D8D8" weight="fill" />
-              </div>
-            </div>
-
-            <div className={styles.projects_main_2_card_4}>
-              <h1 className={styles.projects_main_2_card_4_h1}>04</h1>
-              <p className={styles.projects_main_2_card_4_tools}>
-                HTMl/css Javascript AOS
-              </p>
-
-              <h2 className={styles.projects_main_2_card_4_h2}>Bookmarks</h2>
-              <p className={styles.projects_main_2_card_4_desc}>
-                A landing page for bookmarks chrome extension
-              </p>
-
-              <div className={styles.projects_main_2_card_4_links}>
-                <span className={styles.projects_main_2_card_4_links_website}>
-                  Website
-                </span>
-
-                <GlobeHemisphereWest size={25} color="#D6D8D8" weight="fill" />
-
-                <span className={styles.projects_main_2_card_4_links_github}>
-                  GitHub
-                </span>
-
-                <GithubLogo size={25} color="#D6D8D8" weight="fill" />
-              </div>
-            </div>
-          </div>
+          <Project />
         </section>
 
         <section className={styles.contact}>
