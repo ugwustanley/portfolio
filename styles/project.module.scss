@@ -18,6 +18,10 @@
         display:flex;
         justify-content:center;
         flex-direction:column;
+        overflow:hidden;
+        @media (max-width:900px){
+            border-bottom-left-radius:0px;
+        }
         .project_link{
             position:absolute;
             background:#112240;
@@ -32,6 +36,7 @@
        &_box{
         object-fit:cover;
         height:auto;
+        overflow:hidden;
        }
        img{
         object-fit:contain;
@@ -49,6 +54,9 @@
     &_desc{
         border-top-right-radius:5px;
         border-bottom-right-radius:5px;
+        @media (max-width:900px){
+            border-top-right-radius:0px;
+        }
         background:#112240;
         padding:20px;
         display:flex;

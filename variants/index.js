@@ -106,6 +106,7 @@ export const navSocialVariant = (delay) =>{
             }
     }
   }
+
   export const helloVariant = () =>{
     return {
             hidden: {
@@ -122,3 +123,44 @@ export const navSocialVariant = (delay) =>{
         }
     }
 }
+
+
+export const projectVariant = () =>{
+  return {
+            hidden: {
+              y: 200,
+              opacity: 0.5,
+            //   skewY: -5,
+            },
+
+            visible: {
+            y: 0,
+            opacity:1,
+                transition: {
+                    duration: .6,
+                    delay:  0.1,
+                    ease: "easeOut",
+                }
+            }
+    }
+  }
+
+
+  export const imageVariant = () =>{
+    return {
+              hidden: {
+               scale: 1.3,
+              },
+  
+              visible: {
+               scale:1,
+                  transition: {
+                      duration: .6,
+                      delay:  .8,
+                      ease: "easeOut",
+                  }
+              }
+      }
+    }
+
+

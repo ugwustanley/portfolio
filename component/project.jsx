@@ -4,7 +4,7 @@ import styles from "../styles/project.module.scss";
 import Bundle from '../images/bundle-home.png'
 import { motion, AnimatePresence } from "framer-motion";
 import { GithubLogo, Link, Globe } from "phosphor-react";
-import { } from '../variants/index.js'
+import { projectVariant , imageVariant } from '../variants/index.js'
 
 function Project({ setNav, show_nav }) {
 
@@ -13,16 +13,25 @@ function Project({ setNav, show_nav }) {
     
     <motion.div
         initial={`hidden`}
-        exit={`exit`}
-        animate= {show_nav? `visible`: ``}
-        variants={''}        
+        whileInView={'visible'}
+        viewport={{ once: false }}
+        variants={projectVariant()}        
         className={styles.project}>
         <div className={styles.project_image}>
             <button className={styles.project_link}>
                 Live Preview
             </button>
             <div className={styles.project_image_box}>
-                 <Image src={Bundle}/>
+
+                <motion.div
+                    initial={`hidden`}
+                    whileInView={'visible'}
+                    viewport={{ once: false }}
+                    variants={imageVariant()}
+                >
+                       <Image src={Bundle}/>
+                </motion.div>
+                 
             </div>
         </div>
         <div className={styles.project_desc}>

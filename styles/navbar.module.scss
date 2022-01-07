@@ -10,7 +10,7 @@ $textSecondary: rgba(171, 171, 173, 0.14);
   height: 100vh;
   overflow: hidden;
   // background: #09bdd1b7;
-  color: $textPrimary;
+  color: #e6f1ff;
   top: 0;
   left: 0;
   font-family: Poppins;
@@ -34,10 +34,11 @@ $textSecondary: rgba(171, 171, 173, 0.14);
       padding-bottom:3rem;
       p{
         margin-left:auto;
-        margin-right:15px;
+        margin-left:15px;
       }
     }
   }
+  
   &_part {
     background: #112240;
   }
@@ -79,7 +80,7 @@ $textSecondary: rgba(171, 171, 173, 0.14);
       padding-left: 25px;
     }
     @media (max-width: 400px) {
-      padding-left: 15px;
+      padding-left: 25px;
       font-size:2rem;
       font-weight:400;
     }
