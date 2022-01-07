@@ -5,22 +5,7 @@
   $secondary:#1E1E29 ;
   $textPrimary: #D6D8D8;
   $textSecondary:  rgba(171, 171, 173, 0.14);
-  // $dark-navy: #020c1b;
-  // $navy: #0a192f;
-  // $light-navy: #112240;
-  // $lightest-navy: #233554;
-  // $navy-shadow: rgba(2,12,27,0.7);
-  // $dark-slate: #495670;
-  // $slate: #8892b0;
-  // $light-slate: #a8b2d1;
-  // $lightest-slate: #ccd6f6;
-  // $white: #e6f1ff;
  
-  // $green-tint: rgba(100,255,218,0.1);
-  // $font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
-  // $font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
-;
-
 
 .container{
   background:$primary;
@@ -365,9 +350,6 @@
     height:2px;
     background:#112240;
     margin:auto;
-    // margin-left:-20px;
-    // margin-right:-20px;
-  
   }
   .copy{
     color:#233554;
