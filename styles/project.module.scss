@@ -24,6 +24,7 @@
         overflow:hidden;
         @media (max-width:900px){
             border-bottom-left-radius:0px;
+            border-top-right-radius:5px;
         }
         .project_link{
             position:absolute;
@@ -59,6 +60,7 @@
         border-bottom-right-radius:5px;
         @media (max-width:900px){
             border-top-right-radius:0px;
+            border-bottom-left-radius:5px;
         }
         background:#112240;
         padding:20px;
