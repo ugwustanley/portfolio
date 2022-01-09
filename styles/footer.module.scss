@@ -1,0 +1,44 @@
+
+.footer{
+    margin-top:3rem;
+    padding-bottom:2rem;
+    &_main{
+      display:flex;
+      justify-content: space-between;
+      @media (max-width:600px){
+        justify-content: center;
+        flex-direction: column;
+      }
+    }
+    &_line{
+      width:100%;
+      height:2px;
+      background:#112240;
+      margin:auto;
+    }
+    .copy{
+      color:#233554;
+      font-size:.8rem;
+      @media (max-width:600px){
+        margin:auto;
+        text-align:center;
+      }
+    }
+    &_links{
+      display:flex;
+      color:#fff;
+      @media (max-width:600px){
+        margin:auto;
+      }
+      p{
+        display:flex;
+        align-items:center;
+        margin-right:1rem;
+        font-size:.9rem;
+        cursor:pointer;
+      }
+    }
+   
+   
+  }
+  

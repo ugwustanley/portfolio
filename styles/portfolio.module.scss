@@ -1,0 +1,32 @@
+.projects{
+    margin-top:13rem;
+    &_heading{
+      margin-right:auto;
+      display:flex;
+      justify-content:flex-start;
+      align-items:center;
+      font-family:"Inter";
+      color:#ccd6f6;
+      p{
+        font-size:1.5rem;
+        font-weight:800;
+        text-align:center;
+        margin:0;
+        @media(max-width:600px){
+          font-size:1.2rem;
+        }
+      }
+      &_arrow{
+        width:280px;
+        height:2px;
+        background:#112240;
+        // margin:auto;
+        margin-left:.51rem;
+        margin-top:7px;
+        @media(max-width:600px){
+          width:34%;
+        }
+      }
+    }
+  }
+  

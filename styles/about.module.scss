@@ -1,0 +1,166 @@
+
+ $primary :#0a192f ; 
+ $secondary:#1E1E29 ;
+ $textPrimary: #D6D8D8;
+ $textSecondary:  rgba(171, 171, 173, 0.14);
+
+ 
+.about_me{
+    font-family: "Inter";
+    &_heading{
+
+    display:flex;
+    align-items:center;
+    cursor:pointer;
+    outline:0;
+    border:none;
+    background-color:transparent;
+    width:fit-content;
+    margin-left:auto;
+    margin-top:20px;
+    margin-bottom:70px;
+    @media(max-width:450px)
+    {
+      margin-bottom:20px;
+      margin-top:70px;
+    }
+   
+    &_p{
+      font-size:20px;
+      color:$textPrimary;
+      font-family:Secular One;
+      margin-left:8px;
+      @media(max-width:600px){
+        font-size:20px;
+      }
+    }
+    &_arrow{
+      width:150px;
+      background:$textPrimary;
+      height:2px;
+      @media(max-width:600px){
+        width:150px;
+      }
+      
+    }
+  }
+  &_main{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    margin:50px 0px;
+    @media(max-width:1100px){
+      flex-direction: column;
+     }
+
+
+    
+    &_s1{
+      max-width:50%;
+      @media(max-width:1100px){
+       width: 100%;
+       max-width:100%;
+      }
+      h5{
+        color:#8892b0;
+        font-size:1.2rem;
+        margin:0;
+        margin-bottom:2rem;
+        display:flex;
+        // @media(max-width:600px){
+        //   text-align:center;
+        //   // font-family:'Poppins';
+        //  }
+      }
+     h2{
+        font-size:3.5rem;
+        line-height:2rem;
+        color:#ccd6f6;
+        margin:0;
+        @media(max-width:600px){
+          font-size:2.1rem;
+          line-height:3.4rem;
+          margin-bottom:-1rem;
+          // font-family:'Poppins';
+         }
+     }
+     .hire_me_btn{
+       margin-top:1rem;
+       border:none;
+       border-left:2px solid #e29d07;
+       border-bottom:2px solid #e29d07;
+       background:none;
+       outline:0;
+       cursor:pointer;
+       font-size:1rem;
+       padding-right:2rem;
+       color:#e6f1ff;
+       font-family: 'Poppins', sans-serif;
+       transition: .4s;
+       @media(max-width:600px){
+        font-size:.9rem;
+       }
+       &:hover{
+         padding-right:3rem;
+         color:#8892b0;
+        // border: 2px solid #e29d07;
+        // background:#e29d07;
+       }
+     }
+     p{
+      color:#ccd6f6;
+      font-size:1rem;
+      font-weight: 300;
+      line-height:2rem;
+      margin-top:1.5rem;
+      font-family: 'Poppins', sans-serif;
+      @media(max-width:600px){
+        font-size:.85rem;
+        line-height:2rem;
+        margin-top:1.2rem;
+      }
+      // @media(max-width:400px){
+      //   font-size:16px;
+      // }
+      span{
+        color:#fff;
+      }
+     }
+     &_h4{
+      color:#fff;
+      font-size:27px;
+      margin:0;
+      @media(max-width:600px){
+        font-size:20px;
+      }
+      @media(max-width:400px){
+        font-size:18px;
+      }
+     }
+     
+    }
+    &_s2{
+       background:#112240;
+       border-radius:10px;
+       padding:20px;
+       width:45%;
+       text-align:center;
+       @media(max-width:1100px){
+         margin-top:3rem;
+       }
+       @media(max-width:1100px){
+        width: 100%;
+        max-width:600px;
+        margin:auto;
+        margin-top:5rem;
+       }
+    }
+  }
+  
+  
+}
+.wavyhand{
+  width:auto !important;
+  margin:0 .2rem;
+}
