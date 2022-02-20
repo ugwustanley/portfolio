@@ -126,7 +126,6 @@ export const projectVariant = () => {
     hidden: {
       y: 200,
       opacity: 0.5,
-      //   skewY: -5,
     },
 
     visible: {
@@ -157,6 +156,8 @@ export const imageVariant = () => {
     },
   };
 };
+
+
 
 export const loaderVariant = () => {
   return {
