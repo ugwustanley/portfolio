@@ -27,7 +27,7 @@ function Project({ name, img, text, tools, link, github }) {
             viewport={{ once: true }}
             variants={imageVariant()}
           >
-            <Image src={img} />
+            <img src={img}  alt="picture reference" />
           </motion.div>
         </div>
       </div>
