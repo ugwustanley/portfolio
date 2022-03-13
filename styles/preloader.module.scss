@@ -8,4 +8,12 @@
     background:#0a192f;
     display:grid;
     place-content:center;
+
+   
+}
+
+.preloader svg{
+    @media(max-width: 500px){
+        transform:scale(.7);
+    }
 }

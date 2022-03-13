@@ -41,9 +41,9 @@ export default function Home() {
 
       <AnimatePresence>
 
-        {showPreloader ? <Preloader /> : null}
+       {showPreloader && <Preloader />}
 
-        {show_nav ? <Navbar setNav={setNav} show_nav={show_nav} /> : null}
+       {show_nav && <Navbar setNav={setNav} show_nav={show_nav} />}
 
       </AnimatePresence>
 
