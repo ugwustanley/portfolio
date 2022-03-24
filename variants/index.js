@@ -124,7 +124,7 @@ export const helloVariant = () => {
 export const projectVariant = () => {
   return {
     hidden: {
-      y: 50,
+      y: 150,
       opacity: 0.5,
     },
 
@@ -132,7 +132,7 @@ export const projectVariant = () => {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 0.6,
+        duration: 0.4,
         delay: 0.1,
         ease: "easeOut",
       },
