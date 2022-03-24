@@ -16,6 +16,14 @@ export const projects = [
         link: "https://nft-mark.netlify.app/",
         github: "https://github.com/ugwustanley/nft-marktetplace",
     },
+    {
+        img: "https://res.cloudinary.com/dqzhuopqp/image/upload/v1648152541/samples/t_b_bmpgeu.png",
+        name: "Decode Abbreviations",
+        text: "Decode Abbreviations (@decode_abbr on Twitter) is a twitter bot that tells you the meaning of common abbreviations used on Twitter e.g WAGMI, LOL, BRB etc.",
+        tools: "NODEJS, TWITTER API, TYPESCRIPT",
+        link: "https://twitter.com/decode_abbr",
+        github: "https://github.com/ugwustanley/translate",
+    },
 
     {
         img: "https://res.cloudinary.com/dqzhuopqp/image/upload/v1645696624/samples/auth-home2_elwcjy.png",
