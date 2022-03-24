@@ -124,7 +124,7 @@ export const helloVariant = () => {
 export const projectVariant = () => {
   return {
     hidden: {
-      y: 200,
+      y: 50,
       opacity: 0.5,
     },
 
