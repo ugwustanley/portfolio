@@ -119,8 +119,7 @@ export const helloVariant = () => {
       },
     },
   };
-};
-
+}
 export const projectVariant = () => {
   return {
     hidden: {
