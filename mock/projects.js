@@ -28,7 +28,7 @@ export const projects = [
     {
         img: "https://res.cloudinary.com/dqzhuopqp/image/upload/v1645696624/samples/auth-home2_elwcjy.png",
         name: "Authrocket",
-        text: "Authrocket is a password based authentication system similar to firebase authentication except that its easier to use. Its designed just for basic login and signup operations",
+        text: "Authrocket is a password based authentication system similar to firebase authentication except that it is easier to use. It is designed just for basic login and signup operations",
         tools: "NODEJS, MONGODB, REACTJS, TYPESCRIPT",
         link: "https://authrocket.netlify.app",
         github: "https://github.com/ugwustanley/authrocket-frontend",
