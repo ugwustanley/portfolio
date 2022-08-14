@@ -4,7 +4,7 @@ import Head from "next/head";
 export default function HeadTag() {
   return (
     <Head>
-      <title>Ugwu Stanley - Software Developer</title>
+      <title>Ugwu Chiagozie Stanley</title>
 
       <meta charset="utf-8" />
       <link rel="icon" href="%PUBLIC_URL%/stan-1.svg" />
@@ -24,7 +24,7 @@ export default function HeadTag() {
 
       <meta
         name="description"
-        content={`Ugwu Chiagozie Stanley's portfolio website`}
+        content={`Frontend Developer: Torche`}
       />
       <meta
         name="image"
