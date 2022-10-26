@@ -1,13 +1,15 @@
 export const projects = [
+ 
     {
-        img: "https://res.cloudinary.com/dqzhuopqp/image/upload/v1645696845/samples/bundle-home_fjow8s.png",
-        name: "Bundle",
-        text: "Bundle keeps track of your transaction history and helps businesses exchange their histories to promote transparency.",
-        tools: "FRAMER MOTION, NEXTJS, CHARTJS",
-        link: "https://bundle-site.netlify.app",
-        github: "https://github.com/ugwustanley/bundle",
+        img: " https://res.cloudinary.com/dqzhuopqp/image/upload/v1666786390/samples/Screenshot_2022-10-26_131245_bvcy5g.png",
+        name: "JSON Preview",
+        text: "Easily convert a JSON file into visual and interactive diagrams",
+        tools: "REACT, REACT-FLOW",
+        link: "https://json-preview.vercel.app/",
+        github: "https://github.com/ugwustanley/json-preview",
     },
 
+   
     {
         img: "https://res.cloudinary.com/dqzhuopqp/image/upload/v1645696003/samples/web-nft_xi3kze.png",
         name: "Samy Halim",
@@ -23,6 +25,15 @@ export const projects = [
         tools: "NODEJS, TWITTER API, TYPESCRIPT",
         link: "https://twitter.com/decode_abbr",
         github: "https://github.com/ugwustanley/translate",
+    },
+
+    {
+        img: "https://res.cloudinary.com/dqzhuopqp/image/upload/v1645696845/samples/bundle-home_fjow8s.png",
+        name: "Bundle",
+        text: "Bundle keeps track of your transaction history and helps businesses exchange their histories to promote transparency.",
+        tools: "FRAMER MOTION, NEXTJS, CHARTJS",
+        link: "https://bundle-site.netlify.app",
+        github: "https://github.com/ugwustanley/bundle",
     },
 
     {
