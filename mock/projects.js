@@ -44,9 +44,10 @@ export const projects = [
         link: "https://authrocket.netlify.app",
         github: "https://github.com/ugwustanley/authrocket-frontend",
     },
-
+ 
     {
-        img: "https://res.cloudinary.com/dqzhuopqp/image/upload/v1645696623/samples/port-home_cvegn5.png",
+       
+        img: "https://res.cloudinary.com/dqzhuopqp/image/upload/v1671547388/samples/Screenshot_2022-12-20_144230-2_fu6shx.png",
         name: "Portfolio",
         text: "My portfolio website",
         tools: "FRAMER MOTION, NEXTJS",
