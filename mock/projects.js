@@ -1,7 +1,7 @@
 export const projects = [
  
     {
-        img: " https://res.cloudinary.com/dqzhuopqp/image/upload/v1666786390/samples/Screenshot_2022-10-26_131245_bvcy5g.png",
+        img: "https://res.cloudinary.com/dqzhuopqp/image/upload/v1671548811/samples/Screenshot_2022-12-20_150557_g3elxf.png",
         name: "JSON Preview",
         text: "Easily convert a JSON file into visual and interactive diagrams",
         tools: "REACT, REACT-FLOW",
@@ -11,7 +11,7 @@ export const projects = [
 
    
     {
-        img: "https://res.cloudinary.com/dqzhuopqp/image/upload/v1645696003/samples/web-nft_xi3kze.png",
+        img: "https://res.cloudinary.com/dqzhuopqp/image/upload/v1671548602/samples/Screenshot_2022-12-20_150257_b66dx8.png",
         name: "Samy Halim",
         text: "Samy Halim is a recreation of an nft website i saw on Twitter. I tried to make everything pixel perfect",
         tools: "FRAMER MOTION, NEXTJS, TYPESCRIPT",
