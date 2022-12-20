@@ -142,8 +142,10 @@
     }
     &_s2{
        background:#112240;
-       border-radius:10px;
-       padding:20px;
+       border-radius:15px;
+       
+      padding:5px;
+      background: #D6D8D8;;
        width:45%;
        text-align:center;
        @media(max-width:1100px){
@@ -156,6 +158,12 @@
         margin-top:5rem;
        }
     }
+  }
+
+  &__memoji{
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid #112240;
   }
   
   

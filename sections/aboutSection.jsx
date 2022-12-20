@@ -2,7 +2,7 @@ import {  } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Memoji from "../images/[removal 1.png";
+import Memoji from "../images/[removal 1.png"; 
 import WavyHand from "../images/wavy 1.png";
 import styles from "../styles/about.module.scss";
 import { helloVariant } from "../variants/index.js";
@@ -52,9 +52,11 @@ export default function AboutSection() {
                 </div>
               </div>
               <div className={styles.about_me_main_s2}>
-                <Image
-                  src={Memoji}
-                  className={styles.memoji}
+                <img
+                  //src={Memoji}
+                  src="https://res.cloudinary.com/dqzhuopqp/image/upload/v1671545621/samples/image_wiu57w.jpg"
+                  className={styles.about_me__memoji}
+                  layout="fill"
                   alt="My memoji smiling face"
                 />
               </div>
