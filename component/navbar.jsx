@@ -71,7 +71,7 @@ function Navbar({ setNav, show_nav }) {
           variants={partVariant(0.6)}
           className={`${styles.nav_bar_part} ${styles.nav_bar_part_four}`}
         >
-          <Link href="https://www.linkedin.com/in/ugwu-chiagozie-2157601a7/">
+          <Link href="https://www.linkedin.com/in/ugwustanley/">
             <motion.p variants={navSocialVariant(0.8)}>
               <span>Linkedin</span>{" "}
               <Image width="25" height="25" src={LinkedIn}></Image>

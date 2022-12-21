@@ -14,7 +14,7 @@ export default function footerSection() {
         <div className={styles.footer_line}></div>
         <div className={styles.footer_main}>
           <div className={styles.footer_links}>
-            <Link href="https://www.linkedin.com/in/ugwu-chiagozie-2157601a7/">
+            <Link href="https://www.linkedin.com/in/ugwustanley/">
               <p>
                 <span>LN</span>{" "}
                 <Image width="25" height="25" src={LinkedIn}></Image>
